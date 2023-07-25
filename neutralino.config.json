@@ -15,15 +15,16 @@
   "nativeAllowList": [
     "app.*",
     "os.*",
-    "debug.log"
+    "filesystem.*",
+    "window.*"
   ],
   "modes": {
     "window": {
       "title": "myApp",
       "width": 800,
       "height": 500,
-      "minWidth": 400,
-      "minHeight": 200,
+      "maxWidth": 1200,
+      "maxHeight": 900,
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/www/build/icons/appIcon.png",
@@ -34,9 +35,7 @@
       "exitProcessOnClose": true
     },
     "browser": {
-      "nativeBlockList": [
-        "filesystem.*"
-      ]
+      "nativeBlockList": []
     },
     "chrome": {
       "args": "--disable-web-security"
